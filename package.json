@@ -7,7 +7,7 @@
   "scripts": {
     "devStart": "nodemon server.js"
   },
-  "author": "",
+  "author": "Nazim",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -18,5 +18,8 @@
   "devDependencies": {
     "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
