@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-//import dotenv from 'dotenv/config';
+import dotenv from 'dotenv/config';
 import usersModule from './routes/users.js';
 import registerModule from './routes/register.js';
 import loginModule from './routes/login.js';

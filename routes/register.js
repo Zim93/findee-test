@@ -7,8 +7,10 @@ const router = express.Router();
 //[POST], creating new user
 router.post('/',async(req,res)=>{
     //Encrypt user password
+    if(!req.body.email) return res.status(400).json({message: 'Missing email'});
+    if(!req.body.password) return res.status(400).json({message: 'Missing password'});
+   
     const cryptedPassword = await bcrypt.hash(req.body.password, 10);
-
     const user = new User({
         email: req.body.email.toLowerCase(),
         password: cryptedPassword
@@ -29,6 +31,9 @@ router.post('/',async(req,res)=>{
     }catch(err){
         res.status(400).json({message: err.message})
     }
+
+    
+    
 })
 
 export default router;
