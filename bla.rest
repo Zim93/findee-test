@@ -1,4 +1,5 @@
 GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyNGVmZjNhNDM2NmUzZTZkNDA5Y2YzNSIsImVtYWlsIjoidGVzdDFAdGVzdC5jb20iLCJwYXNzd29yZCI6IiQyYSQxMCQ3QUhyMzhWajg0cldWd1RhOXZhYXV1N0ZtMjR0NXJvUGpDbGFIdFEvNUJTUFNMbVF5NEdWdSIsImNyZWF0ZWRBdCI6IjIwMjItMDQtMDdUMTU6MTE6NTQuNzg0WiIsIl9fdiI6MH0sImlhdCI6MTY0OTM2NTIwNCwiZXhwIjoxNjQ5MzY2NDA0fQ.p-a5-UJdSdJrMWVRL6dM1Ldpy7d9kR5XanGeXDupPng
 
 ###
 
@@ -6,7 +7,7 @@ Post http://localhost:3000/register
 Content-Type: application/json
 
 {
-    "email": "Test10@test1.com",
+    "email": "test1@test.com",
     "password": "aaaaaa"
 }
 
@@ -16,6 +17,6 @@ Post http://localhost:3000/login
 Content-Type: application/json
 
 {
-    "email": "Test10@test1.com",
+    "email": "test1@test.com",
     "password": "aaaaaa"
 }

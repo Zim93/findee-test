@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+//User model
+
 const userSchema = new mongoose.Schema({
     email: {
         type: String,
@@ -14,9 +16,6 @@ const userSchema = new mongoose.Schema({
         type: Date,
         required: true,
         default: Date.now,
-    },
-    token:{
-        type: String,
     }
 });
 
