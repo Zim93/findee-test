@@ -8,7 +8,7 @@ const router = express.Router();
 router.get('/',authenticateToken ,async(req,res)=>{
    try{
     const users = await User.find({},{email:1, createdAt:1});
-    res.json(users);
+    res.status(200).json(users);
    } catch(err){
     res.status(500).json({message:err.message});
    }

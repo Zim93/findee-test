@@ -1,5 +1,5 @@
 GET http://localhost:3000/users
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyNGVmZjNhNDM2NmUzZTZkNDA5Y2YzNSIsImVtYWlsIjoidGVzdDFAdGVzdC5jb20iLCJwYXNzd29yZCI6IiQyYSQxMCQ3QUhyMzhWajg0cldWd1RhOXZhYXV1N0ZtMjR0NXJvUGpDbGFIdFEvNUJTUFNMbVF5NEdWdSIsImNyZWF0ZWRBdCI6IjIwMjItMDQtMDdUMTU6MTE6NTQuNzg0WiIsIl9fdiI6MH0sImlhdCI6MTY0OTM2Njg1OCwiZXhwIjoxNjQ5MzY4MDU4fQ.md5Bzy5GI-vQbxnmrH8nG0QEsJR4u5TYZRPf5wsFKYk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYyNGVmZjNhNDM2NmUzZTZkNDA5Y2YzNSIsImVtYWlsIjoidGVzdDFAdGVzdC5jb20iLCJwYXNzd29yZCI6IiQyYSQxMCQ3QUhyMzhWajg0cldWd1RhOXZhYXV1N0ZtMjR0NXJvUGpDbGFIdFEvNUJTUFNMbVF5NEdWdSIsImNyZWF0ZWRBdCI6IjIwMjItMDQtMDdUMTU6MTE6NTQuNzg0WiIsIl9fdiI6MH0sImlhdCI6MTY0OTM3NjQ4MCwiZXhwIjoxNjQ5Mzc3NjgwfQ.3wpMslIOjP5I70BvZckYHnM_JFf9tmlBdbDaLassELc
 
 ###
 
@@ -7,6 +7,7 @@ Post http://localhost:3000/register
 Content-Type: application/json
 
 {
+    "email": "test1@test.com",
     "password": "aaaaaa"
 }
 
@@ -25,6 +26,7 @@ Post http://localhost:3000/login
 Content-Type: application/json
 
 {
+    "email": "test1@test.com",
     "password": "aaaaaa"
 }
 

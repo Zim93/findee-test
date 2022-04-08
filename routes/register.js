@@ -1,6 +1,7 @@
 import express from 'express';
 import User from '../models/user.js';
 import bcrypt from 'bcryptjs/dist/bcrypt.js';
+import validator from 'email-validator';
 
 const router = express.Router();
 
@@ -9,7 +10,8 @@ router.post('/',async(req,res)=>{
     //Encrypt user password
     if(!req.body.email) return res.status(400).json({message: 'Missing email'});
     if(!req.body.password) return res.status(400).json({message: 'Missing password'});
-   
+    if(!validator.validate(req.body.email)) return res.status(400).json({message: 'Invalid email'});
+
     const cryptedPassword = await bcrypt.hash(req.body.password, 10);
     const user = new User({
         email: req.body.email.toLowerCase(),
